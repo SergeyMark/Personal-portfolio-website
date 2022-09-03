@@ -4,17 +4,174 @@
     /* Color */
     --main-cl: #5E3BEE;
     --text-cl: #282938;
+    --light-cl: #ffffff;
+    --secondary-text-cl: #1C1E53;
     /* BG Color */
     --bg-main-cl: #F5FCFF;
     /* Other */
-    --dribble-btn-cl: #F5FCFF;
+    --dribble-btn-cl: #E62872;
 }
 
 .page{
     font-family: var(--main-font);
+    font-style: normal;
     font-size: 16px;
     font-weight: 400;
     line-height: calc(24 / 16);
     color: var(--text-cl);
 }
 
+/* RESET */
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Other Class */
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    border: 0;
+
+    padding: 14px 20px;
+}
+
+/* HOVER AND FOCUS */
+
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--main-cl);
+}
+
+.header-btn:hover,
+.header-btn:focus{
+    background-color: var(--main-cl);
+    color: var(--light-cl);
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: var(--bg-main-cl);
+    color: var(--main-cl);
+
+    border: 1px solid var(--main-cl);
+}
+
+/* HEADER */
+
+.header-group{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu{
+    margin-left: 340px;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-link{
+    display: block;
+    padding: 33px 0;
+}
+
+.header-btn{
+    background-color: transparent;
+    color: var(--main-cl);
+
+    border: 1px solid var(--main-cl);
+    border-radius: 4px;
+
+    margin-left: auto;
+}
+
+/* HERO */
+
+.hero{
+    padding: 100px 0;
+    background-color: var(--bg-main-cl);
+}
+
+.hero-group{
+    display: flex;
+    align-items: center;
+}
+
+.hero-title-group{
+    flex-basis: 595px;
+}
+
+.hero-suptitle{
+    font-weight: 500;
+        
+    color: var(--text-cl);
+
+    margin-bottom: 16px;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(67 / 56);
+    
+    color: var(--text-cl);
+    
+    margin-bottom: 16px;
+}
+
+.hero-title .desc{
+    color: var(--main-cl);
+}
+
+.hero-subtitle{
+    font-size: 18px;
+    line-height: calc(27 / 18);
+    
+    color: var(--secondary-text-cl);
+
+    max-width: 465px;
+    margin-bottom: 40px;
+}
+
+.hero-btn{
+    display: inline-block;
+
+    color: var(--light-cl);
+    background-color: var(--main-cl);
+
+    border: 1px solid var(--main-cl);
+
+    padding: 14px 20px;
+}
+
+
+/* SKILLS */
