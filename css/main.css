@@ -1,0 +1,20 @@
+:root{
+    /* Font Family */
+    --main-font: 'Roboto', sans-serif;
+    /* Color */
+    --main-cl: #5E3BEE;
+    --text-cl: #282938;
+    /* BG Color */
+    --bg-main-cl: #F5FCFF;
+    /* Other */
+    --dribble-btn-cl: #F5FCFF;
+}
+
+.page{
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24 / 16);
+    color: var(--text-cl);
+}
+
